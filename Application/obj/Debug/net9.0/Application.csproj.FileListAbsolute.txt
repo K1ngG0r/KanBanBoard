@@ -1,0 +1,15 @@
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/bin/Debug/net9.0/Application.deps.json
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/bin/Debug/net9.0/Application.dll
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/bin/Debug/net9.0/Application.pdb
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/bin/Debug/net9.0/Domain.dll
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/bin/Debug/net9.0/Domain.pdb
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/Application.csproj.AssemblyReference.cache
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/Application.AssemblyInfoInputs.cache
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/Application.AssemblyInfo.cs
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/Application.csproj.CoreCompileInputs.cache
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/Applicat.44B5EDA2.Up2Date
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/Application.dll
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/refint/Application.dll
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/Application.pdb
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/ref/Application.dll

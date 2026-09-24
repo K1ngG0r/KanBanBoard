@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "R93uIR226Ng=",
+  "success": true,
+  "projectFilePath": "/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/kinggor/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.20/microsoft.aspnetcore.app.ref.9.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

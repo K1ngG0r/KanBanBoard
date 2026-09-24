@@ -1,0 +1,11 @@
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/bin/Debug/net9.0/Domain.deps.json
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/bin/Debug/net9.0/Domain.dll
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/bin/Debug/net9.0/Domain.pdb
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/Domain.AssemblyInfoInputs.cache
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/Domain.AssemblyInfo.cs
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/Domain.csproj.CoreCompileInputs.cache
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/Domain.dll
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/refint/Domain.dll
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/Domain.pdb
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/ref/Domain.dll
