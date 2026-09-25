@@ -1,4 +1,5 @@
 ﻿using Api.MVC.Requests;
+using Api.MVC.Responces;
 using Api.Requests;
 using Application.Interfaces;
 using Domain.Models;
@@ -37,7 +38,7 @@ public class TaskController(
             request.Name, 
             request.Description, 
             request.ShortDescription, 
-            "To Do"
+            request.Status
         );
 
         newTask.UserId = userId; 
@@ -65,6 +66,8 @@ public class TaskController(
  
         if (!tasks.Any())
             return Ok(new List<object>());
+
+
         return Ok(tasks);
     }
 
@@ -91,5 +94,31 @@ public class TaskController(
 
         return Ok(task.Id);
     }
+
+    [HttpPost("[action]")]
+    [Authorize]
+    public async Task<IActionResult> ChangeStatusTask([FromBody] ChangeStatusTaskRequest request, CancellationToken cancellationToken = default)
+    {
+        var userIdClaim = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (string.IsNullOrEmpty(userIdClaim) || !Guid.TryParse(userIdClaim, out var userId))
+            return Unauthorized("Invalid token!");
+
+        var task = await dbContext.Tasks
+            .Where(x => x.Id == request.TaskId)
+            .FirstOrDefaultAsync(cancellationToken);
+
+        if (task is null)
+            return BadRequest($"Unsuitable task Id: {request.TaskId}!");
+
+        if (task.UserId != userId)
+            return BadRequest("User doesn't have this task!");
+
+        task.Status = request.NewStatus;
+
+        await dbContext.SaveChangesAsync(cancellationToken);
+
+        return Ok(task.Id);
+    }
+
 }
 
