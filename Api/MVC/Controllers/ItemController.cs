@@ -23,17 +23,16 @@ public class TaskController(
     [Authorize]
     public async Task<IActionResult> CreateTask([FromBody] CreateTaskRequest request, CancellationToken cancellationToken = default)
     {
-        // 1. Получаем ID пользователя
+
         var userIdClaim = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         if (string.IsNullOrEmpty(userIdClaim) || !Guid.TryParse(userIdClaim, out var userId))
             return Unauthorized("Invalid token!");
 
-        // 2. Проверяем, существует ли пользователь (оптимизировано через AnyAsync)
+
         var userExists = await dbContext.Accounts.AnyAsync(x => x.Id == userId, cancellationToken);
         if (!userExists)
             return BadRequest("Unsuitable token!");
 
-        // 3. Создаем задачу
         var newTask = new Domain.Models.Task(
             request.Name, 
             request.Description, 
@@ -41,8 +40,7 @@ public class TaskController(
             "To Do"
         );
 
-        // !!! ИСПРАВЛЕНИЕ 1: Привязываем задачу к пользователю !!!
-        // Если у вас свойство называется AccountId, замените UserId на AccountId
+  AccountId, замените UserId на AccountId
         newTask.UserId = userId; 
 
         await dbContext.Tasks.AddAsync(newTask, cancellationToken);
@@ -59,13 +57,13 @@ public class TaskController(
         if (string.IsNullOrEmpty(userIdClaim) || !Guid.TryParse(userIdClaim, out var userId))
             return Unauthorized("Invalid token!");
 
-        // !!! ИСПРАВЛЕНИЕ 2: Запрашиваем задачи напрямую из DbSet Tasks !!!
+ 
         var tasks = await dbContext.Tasks
             .AsNoTracking()
-            .Where(x => x.UserId == userId) // Замените на x.AccountId == userId, если нужно
+            .Where(x => x.UserId == userId) 
             .ToListAsync(cancellation);
 
-        // !!! ИСПРАВЛЕНИЕ 3: Проверяем на пустоту, а не на null !!!
+ 
         if (!tasks.Any())
             return Ok(new List<object>()); // Или return NotFound("У вас пока нет задач");
 
