@@ -40,7 +40,6 @@ public class TaskController(
             "To Do"
         );
 
-  AccountId, замените UserId на AccountId
         newTask.UserId = userId; 
 
         await dbContext.Tasks.AddAsync(newTask, cancellationToken);
