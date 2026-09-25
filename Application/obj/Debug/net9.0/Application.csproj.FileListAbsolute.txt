@@ -13,3 +13,4 @@
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/refint/Application.dll
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/Application.pdb
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/ref/Application.dll
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Application/obj/Debug/net9.0/Application.sourcelink.json

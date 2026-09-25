@@ -172,3 +172,4 @@
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Api/obj/Debug/net9.0/Api.pdb
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Api/obj/Debug/net9.0/Api.genruntimeconfig.cache
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Api/obj/Debug/net9.0/ref/Api.dll
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Api/obj/Debug/net9.0/Api.sourcelink.json

@@ -17,3 +17,4 @@
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Infrastructure/obj/Debug/net9.0/Infrastructure.pdb
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Infrastructure/obj/Debug/net9.0/Infrastructure.genruntimeconfig.cache
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Infrastructure/obj/Debug/net9.0/ref/Infrastructure.dll
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Infrastructure/obj/Debug/net9.0/Infrastructure.sourcelink.json

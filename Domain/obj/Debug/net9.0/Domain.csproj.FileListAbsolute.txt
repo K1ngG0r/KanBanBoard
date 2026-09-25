@@ -9,3 +9,4 @@
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/refint/Domain.dll
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/Domain.pdb
 /home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/ref/Domain.dll
+/home/kinggor/Projects/AspNet/Kanban/Kanban/Domain/obj/Debug/net9.0/Domain.sourcelink.json
