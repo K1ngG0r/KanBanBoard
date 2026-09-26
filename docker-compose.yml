@@ -1,0 +1,19 @@
+services:
+  kanban-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        DOTNET_VERSION: "9.0"
+    container_name: kanban-api
+    ports:
+      - "8000:8000"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Data Source=/data/kanban.db
+    volumes:
+      - kanban-data:/data
+    restart: unless-stopped
+
+volumes:
+  kanban-data:

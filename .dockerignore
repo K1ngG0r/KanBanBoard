@@ -1,0 +1,11 @@
+**/bin
+**/obj
+**/.git
+**/.idea
+**/.vscode
+*.db
+*.db-shm
+*.db-wal
+Dockerfile
+docker-compose.yml
+
